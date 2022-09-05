@@ -1,10 +1,8 @@
 import './app.less'
 
-function App (props) {
+function App(props) {
   const { children } = props
-  return (
-    {children}
-  )
+  return { children }
 }
 
 export default App

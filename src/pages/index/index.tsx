@@ -1,9 +1,7 @@
 import React from 'preact'
 import { View, Text } from '@tarojs/components'
-import './index.less'
 
-
-function Index () {
+function Index() {
   return (
     <View className='index'>
       <Text>Hello world!</Text>
@@ -11,4 +9,4 @@ function Index () {
   )
 }
 
-export default Index;
+export default Index
