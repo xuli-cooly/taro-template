@@ -29,11 +29,11 @@
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "lint": "npm run lint:js && npm run lint:style",
     "lint:js": "eslint --ext \".js,.ts,.tsx\" .",
-    "lint:style": "stylelint \"**/*.{css,scss}\"",
+    "lint:style": "stylelint \"**/*.{css,less}\"",
     "fix": "npm run fix:es && npm run fix:style && npm run fix:prettier || exit 1",
     "fix:es": "eslint --ext \".js,.tsx,.ts\" ./ --cache --fix",
-    "fix:style": "stylelint \"**/*.{css,scss}\" --cache --fix ",
-    "fix:prettier": "prettier --write \"**/*.{ts,tsx,js,scss,css,json,yml,yaml,md,mdx}\" "
+    "fix:style": "stylelint \"**/*.{css,less}\" --cache --fix ",
+    "fix:prettier": "prettier --write \"**/*.{ts,tsx,js,less,css,json,yml,yaml,md,mdx}\" "
   },
   "browserslist": [
     "last 3 versions",
@@ -79,8 +79,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss-less": "^6.0.0",
     "prettier": "^2.7.1",
-    "stylelint": "^14.4.0",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^28.0.0",
     "typescript": "^4.1.0",
     "webpack": "5.69.0"
   }
