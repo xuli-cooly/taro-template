@@ -37,6 +37,7 @@ module.exports = {
     'react/function-component-definition': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-props-no-spreading': 'off',
-    'global-require': 0
+    'global-require': 0,
+    'no-param-reassign': 'off',
   }
 }
