@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   projectName: 'taro-template',
   date: '2022-9-5',
@@ -38,7 +40,16 @@ const config = {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
-      }
+      },
+      lessLoaderOption: {
+        lessOptions: {
+          strictMath: true,
+          noIeCompat: true,
+          modifyVars: {
+            hack: `true; @import "${path.join(__dirname, '..', 'src/styles/utils.less')}";`,
+          },
+        },
+      },
     }
   },
   h5: {
